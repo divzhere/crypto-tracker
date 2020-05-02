@@ -7,12 +7,28 @@ export default class Home extends Component {
       labels: [],
       datasets: [
         {
-          type: "line",
           label: "BTC-USD",
-          backgroundColor: "rgba(0, 0, 0, 0)",
+          // backgroundColor: "rgba(0, 0, 0, 0)",
           borderWidth: "2",
-          lineTension: 0.45,
-          data: []
+          // lineTension: 0.45,
+          data: [],
+          fill: false,
+          lineTension: 0.1,
+          backgroundColor: 'rgba(75,192,192,0.4)',
+          borderColor: 'rgba(75,192,192,1)',
+          borderCapStyle: 'butt',
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: 'miter',
+          pointBorderColor: 'rgba(75,192,192,1)',
+          pointBackgroundColor: '#fff',
+          pointBorderWidth: 1,
+          pointHoverRadius: 5,
+          pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+          pointHoverBorderColor: 'rgba(220,220,220,1)',
+          pointHoverBorderWidth: 2,
+          pointRadius: 1,
+          pointHitRadius: 10
         }
       ]
     },
@@ -27,7 +43,7 @@ export default class Home extends Component {
           {
             ticks: {
               autoSkip: true,
-              maxTicksLimit: 10
+              maxTicksLimit: 100
             }
           }
         ]
@@ -82,7 +98,8 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <h1>BTC-USD</h1>
+      <h1>BITCOIN / U.S. DOLLAR</h1>
+      <p style={{color:'#222'}}>BTC-USD</p>
         <Line data={this.state.lineChartData} options={this.state.lineChartOptions} />
       </div>
     )
