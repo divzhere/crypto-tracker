@@ -1,3 +1,6 @@
+## Crypto-tracker [![Netlify Status](https://api.netlify.com/api/v1/badges/d5271a93-95b3-4a05-ab0f-3058f556bdd3/deploy-status)](https://app.netlify.com/sites/focused-lalande-dff4a0/deploys)
+BTC-USD Ticker made using React, Web Sockets for real-time data. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
